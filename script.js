@@ -13,9 +13,9 @@
 // //CODIGO 1///////////////////
 
 // console.log(hello);                                   
-// var hello = 'world';        //defino primero la variable LET y luego imprimo en consola
+// var hello = 'world';        // aparece como undefined
 
-// codigo modificado//
+// codigo modificado// defino primero la variable LET y luego imprimo en consola
 
 // let hello = 'world';
 // console.log(hello);                                   
@@ -28,18 +28,17 @@
 // test();
 // function test(){
 // 	var needle = 'magnet';
-// 	console.log(needle);  //defino como LET la variable dentro de la funcion y ademas imprimo en consola la varialble VAR que esta fuera de la funcion
+// 	console.log(needle); 
 // }
 
-// codigo modificado//
+// codigo modificado//defino como LET la variable dentro de la funcion y ademas modifico el llamado de la funcion para despues de la definicion
 
 // var needle = 'haystack';
-// console.log(needle);
-// test();
 // function test(){
 // 	let needle = 'magnet';
 // 	console.log(needle);
 // }
+// test();
 
 // /////////////////////////////
 // /////////////////////////////
@@ -75,16 +74,17 @@
 // 	var food = 'gone';
 // }
 
-// codigo modificado // se cambia el VAR por LET en la funcion
+// codigo modificado // se cambia el VAR por LET en la funcion Y se reestructura
 
-// var food = 'chicken';
+// let food = 'chicken';
 // console.log(food);
-// eat();
 // function eat(){
-// 	let food = 'half-chicken';
+// 	var food = 'half-chicken';
 // 	console.log(food);
 // 	food = 'gone';
 // }
+// eat();
+// console.log(food);
 
 // /////////////////////////////
 // /////////////////////////////
@@ -100,18 +100,17 @@
 // }
 // console.log(food);
 
-// codigo modificado// se declara variable fuera de la funcion
+// codigo modificado// se declara variable fuera de la funcion y se reestructura
 
 
-// let food =''
+// var food = ""
 // var mean = function() {
-// 	var food = "chicken";
+// 	food = "chicken";
 // 	console.log(food);
-// 	food = "fish";
+// 	var food = "fish";
 // 	console.log(food);
 // }
 // mean();
-// console.log(food);
 // console.log(food);
 
 // /////////////////////////////
@@ -128,18 +127,18 @@
 // }
 // console.log(genre);
 
-// codigo modificado//
+// codigo modificado// se sube la definicion de la variable para que no salga indefinida
 
-console.log(genre);
-var genre = "disco";
-rewind();
-function rewind() {
-	genre = "rock";
-	console.log(genre);
-	var genre = "r&b";
-	console.log(genre);
-}
-console.log(genre);
+// var genre = "disco";
+// console.log(genre);
+// rewind();
+// function rewind() {
+// 	genre = "rock";
+// 	console.log(genre);
+// 	var genre = "r&b";
+// 	console.log(genre);
+// }
+// console.log(genre);
 
 // /////////////////////////////
 // /////////////////////////////
@@ -155,17 +154,17 @@ console.log(genre);
 // }
 // console.log(dojo);
 
-// codigo modificado//
+// codigo modificado// se mueve el llamado de la funcion al final
 
 // dojo = "san jose";
 // console.log(dojo);
-// learn();
 // function learn() {
 // 	dojo = "seattle";
 // 	console.log(dojo);
 // 	var dojo = "burbank";
 // 	console.log(dojo);
 // }
+// learn();
 // console.log(dojo);
 
 // /////////////////////////////
